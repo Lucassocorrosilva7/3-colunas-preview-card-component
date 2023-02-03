@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --clr-1: hsl(31, 77%, 52%);
+    --clr-2: hsl(184, 100%, 22%);
+    --clr-3: hsl(179, 100%, 13%);
+    --clr-white: hsla(0, 0%, 100%, 0.75);
+    --clr-gray: hsl(0, 0%, 95%);
+    --ff-primary: 'Lexend Deca', sans-serif;
+    --ff-secondary: 'Big Shoulders Display', cursive;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    background: var(--clr-gray);
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--ff-primary);
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.btn {
+    padding: 1.5rem 3rem;
+    border-radius: 15rem;
+    margin: 2rem 0;
+    border: 1px solid var(--clr-gray);
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--clr-white);
+}
+
+.card__heading {
+    color: var(--clr-gray);
+    font-family: var(--ff-secondary);
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.card__text {
+    color: var(--clr-white);
+    font-family: var(--ff-primary);
+    line-height: 1.8;
+}
+
+
+
+.card {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 45rem;
+    gap: 2rem;
+}
+
+
+
+.card-1 {
+    background: var(--clr-1);
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+.card__btn-1 {
+    color: var(--clr-1);
+}
+
+.card-2 {
+    background: var(--clr-2);
+}
+
+.card__btn-2 {
+    color: var(--clr-2);
+}
+
+
+.card-3 {
+    background: var(--clr-3);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.card__btn-3 {
+    color: var(--clr-3);
+}
+
+.card__text {
+    max-width: 24rem;
+}
+
+
+/* Media query */
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        height: 50rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .card-1 {
+        border-radius: 1rem 0 0 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-3 {
+        border-radius: 0 1rem 1rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .card__text {
+        max-width: 22rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .card__text {
+        margin-bottom: 5rem;
+    }
+}
