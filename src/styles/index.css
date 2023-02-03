@@ -52,14 +52,9 @@ button {
     padding: 1.5rem 3rem;
     border-radius: 15rem;
     margin: 2rem 0;
-    border: 1px solid var(--clr-gray);
-    transition: all .2s ease-in-out;
+    border: 2px solid var(--clr-gray);
 }
 
-.btn:hover {
-    background-color: transparent;
-    color: var(--clr-white);
-}
 
 .card__heading {
     color: var(--clr-gray);
@@ -133,6 +128,17 @@ button {
         height: 50rem;
     }
 
+}
+
+@media (min-width: 768px) {
+    .btn {
+        transition: all .2s ease-in-out;
+    }
+
+    .btn:hover {
+        background-color: transparent;
+        color: var(--clr-white);
+    }
 }
 
 @media (min-width: 768px) {
